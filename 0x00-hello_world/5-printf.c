@@ -1,10 +1,8 @@
 #include<stdio.h>
 /**
-*This is the main description of the page
-*A program should have an entry point
-* It is successful when it return zero
-*this is standard practice
-*/
+ * main - Entry point
+ * Return: Always 0 (sucess)
+ */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
