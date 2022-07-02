@@ -8,7 +8,7 @@
 int main(void)
 {
 int n = 0;
-if (n <= 9)
+if (n <= 9; n++)
 putchar(n);
 putchar('\n');
 return (0);
