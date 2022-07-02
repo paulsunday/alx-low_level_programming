@@ -7,3 +7,4 @@ When I was having that alphabet soup, I never thought that it would pay off
 5. Numbers
 Numberz
 Smile in the mirror
+wrote a a program that prints all the numbers of base 16 in lowercase, followed by a new line.
