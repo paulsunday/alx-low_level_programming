@@ -7,11 +7,11 @@
 int main(void)
 {
 int a, b, c;
-for (a = 0; a <= 9; a++)
+for (a = 0; a <= 8; a++)
 {
-for (b = a++; b <= 8; b++)
+for (b = a++; b <= 9; b++)
 {
-for (c = b++; c <= 7; c++)
+for (c = b++; c < 10; c++)
 {
 putchar(a + '0');
 putchar(b + '0');
