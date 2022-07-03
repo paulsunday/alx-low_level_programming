@@ -9,3 +9,4 @@ Numberz
 Smile in the mirror
 wrote a a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 9. Patience, persistence and perspiration make an unbeatable combination for success
+10. Inventing is a combination of brains and materials. The more brains you use, the less material you need
