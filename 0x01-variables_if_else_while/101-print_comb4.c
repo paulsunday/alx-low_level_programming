@@ -13,9 +13,9 @@ for (b = a++; b < 9; b++)
 {
 for (c = b++; c < 10; c++)
 {
-putchar(a + '0');
-putchar(b + '0');
-putchar(c + '0');
+putchar((a % 10) + '0');
+putchar((b % 10) + '0');
+putchar((c % 10) + '0');
 if (a == 7 && b == 8 && c == 9)
 continue;
 putchar(',');
