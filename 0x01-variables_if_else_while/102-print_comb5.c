@@ -16,7 +16,6 @@ putchar(n + '0');
 putchar(' ');
 putchar((x / 10) + '0');
 putchar(x + '0');
-putchar(' ');
 if (n == 98 && x == 99)
 continue;
 putchar(',');
