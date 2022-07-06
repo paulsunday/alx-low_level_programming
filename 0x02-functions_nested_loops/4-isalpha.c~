@@ -1,0 +1,7 @@
+#include "main.h"
+/**
+ * _isalpha- Checks for alphabetic character
+ * Return: Always Zero (Success)
+ */
+int _isalpha(int c)
+  
