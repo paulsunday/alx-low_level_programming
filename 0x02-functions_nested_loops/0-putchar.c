@@ -1,13 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 /**
-* Main- Prints is the entry point always at the begining of the page
-* Return: Always zero (Success)
+* main- Is the entry point of the program
+* Return: Always zero (success)
 */
 int main(void)
 {
-char *ch = "_putchar";
-putchar(*ch);
-putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
