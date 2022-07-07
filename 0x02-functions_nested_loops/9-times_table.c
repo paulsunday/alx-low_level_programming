@@ -6,10 +6,11 @@
 void times_table(void)
 {
 int a = 0;
-int b = 0;
+int b;
 int mul;
 while (a <= 9)
 {
+b = 0;
 while (b <= 9)
 {
 mul = a * b;
@@ -33,7 +34,7 @@ _putchar(',');
 _putchar(' ');
 }
 b++;
- }
+}
 _putchar('\n');
 a++;
 }
