@@ -31,7 +31,7 @@ _putchar('0' + mul % 10);
 else
 {
 _putchar('0' + mul / 100);
-_putchar('0' + mul - 100) / 10;
+_putchar('0' + (mul - 100) / 10);
 _putchar('0' + mul % 10);
 }
 if (b < n)

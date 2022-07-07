@@ -12,3 +12,4 @@ Write a program that prints _putchar, followed by a new line.
 11. 98 Battery Street, the OG
 10. a + b
 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+13. Nature made the natural numbers; All else is the work of women
