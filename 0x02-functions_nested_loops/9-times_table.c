@@ -11,6 +11,7 @@ int mul;
 while (a <= 9)
 {
 while (b <= 9)
+{
 mul = a * b;
 if (b == 0)
 {
@@ -32,6 +33,7 @@ _putchar(',');
 _putchar(' ');
 }
 b++;
+ }
 _putchar('\n');
 a++;
 }
