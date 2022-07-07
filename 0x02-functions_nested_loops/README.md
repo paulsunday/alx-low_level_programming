@@ -11,3 +11,4 @@ Write a program that prints _putchar, followed by a new line.
 9. Learn your times table
 11. 98 Battery Street, the OG
 10. a + b
+12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
