@@ -3,7 +3,6 @@
 * main- test function that prints if interger is positive or negative
 * Return: 0
 */
-int positive_or_negative();
 int main(void)
 {
 int i;
