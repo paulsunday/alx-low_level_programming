@@ -13,7 +13,7 @@ ii = 0;
 while (ii < i)
 {
 _putchar(' ');
-i++;
+ii++;
 }
 _putchar('\\');
 _putchar('\n');
