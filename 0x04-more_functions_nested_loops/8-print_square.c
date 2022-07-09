@@ -18,6 +18,6 @@ ii++;
 _putchar('\n');
 i++;
 }
-  if (i == 0)
-    _putchar('\n');
+if (i == 0)
+_putchar('\n');
 }
