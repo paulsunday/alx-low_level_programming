@@ -20,3 +20,9 @@ printf("%s ", &(s[i]) + 1);
 }
 printf("%s ", s);
 }
+int main(void)
+{
+char s[] = "Holberton!";
+strrev(s);
+return 0;
+}
