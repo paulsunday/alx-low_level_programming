@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
-* print_rev- Prints a string in reverse
+* _print_rev- Prints a string in reverse
 * @s: String
 * Return: Always Zero
 */
@@ -18,11 +18,5 @@ s[i] = '\0';
 printf("%s ", &(s[i]) + 1);
 }
 }
-printf("%s ", s);
-}
-int main(void)
-{
-char s[] = "Holberton!";
-strrev(s);
-return 0;
+printf ("%s ", s);
 }
