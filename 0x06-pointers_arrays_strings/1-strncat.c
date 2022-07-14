@@ -10,9 +10,5 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-_strncat(dest, src, n);
-_putchar(dest);
-_putchar(src);
-_putchar("\n");
-return (dest);
+
 }

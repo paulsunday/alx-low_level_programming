@@ -9,14 +9,13 @@
 */
 char *_strcat(char *dest, char *src)
 {
-int l1, l2, n;
-l1 = _strlen(dest);
-l2 = _strlen(src);
-for (n = 0; n <= l2; n++)
+int len1, len2, n;
+len1 = _strlen(dest);
+len2 = _strlen(src);
+for (n = 0; n <= len2; n++)
 {
-dest[l1 + 1] = src[n];
+dest[len1 + n] = src[n];
 _putchar(dest);
-_putchar(src);
 _putchar("\n");
 }
 return (dest);
