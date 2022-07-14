@@ -1,5 +1,4 @@
 #include <string.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -11,13 +10,14 @@
 char *_strcat(char *dest, char *src)
 {
 int l1, l2, n;
-l1 = strlen(dest);
-l2 = strlen(src);
+l1 = _strlen(dest);
+l2 = _strlen(src);
 for (n = 0; n <= l2; n++)
 {
 dest[l1 + 1] = src[n];
+_putchar(dest);
+_putchar(src);
+_putchar("\n");
 }
-printf("%s\n", dest);
-puts(src);
 return (dest);
 }

@@ -11,6 +11,8 @@
 char *_strncat(char *dest, char *src, int n)
 {
 _strncat(dest, src, n);
-printf("%s\n", dest);
+_putchar(dest);
+_putchar(src);
+_putchar("\n");
 return (dest);
 }
