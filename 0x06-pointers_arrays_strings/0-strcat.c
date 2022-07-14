@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "main.h"
@@ -15,8 +16,7 @@ len2 = _strlen(src);
 for (n = 0; n <= len2; n++)
 {
 dest[len1 + n] = src[n];
-_putchar(dest);
-_putchar("\n");
 }
+printf("%s\n", dest);
 return (dest);
 }
