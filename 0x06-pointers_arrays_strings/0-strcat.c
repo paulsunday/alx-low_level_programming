@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -9,7 +10,13 @@
 */
 char *_strcat(char *dest, char *src)
 {
-_strcat(dest, src);
+int l1, l2, n;
+l1 = strlen(dest);
+l2 = strlen(src);
+for (n = 0; n <= l2; n++)
+{
+dest[l1 + 1] = src[n];
 printf("%s\n", dest);
+}
 return (dest);
 }
