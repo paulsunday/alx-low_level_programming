@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-* cap_string- capitalizes all words in string
-* @s: String
-* Return: Address of s
+* cap_string - capitalizes all words in a string
+* @s: string
+* Return: address of s
 */
 char *cap_string(char *s)
 {
 int i = 0, j;
-char a[] = "\t\n,;.!?\"(){}";
+char a[] = " \t\n,;.!?\"(){}";
 while (*(s + i))
 {
 if (*(s + i) >= 'a' && *(s + i) <= 'z')
