@@ -4,22 +4,21 @@
 * _strcmp - Compares string
 * @s1: string 1
 * @s2: string 2
-* Return: Always Zero
+* Return: int
 */
 int _strcmp(char *s1, char *s2)
 {
-int n, flag = 0;
-for (n = 0; s1[n] != '\0' || s2[n] != '\0'; n++)
+while (((*s1 != '\0') && (*s2 != '\0')) && (*s1 == *s2))
 {
-if (s1[n] != s2[n])
+s1++;
+s2++;
+}
+if (*s1 == *s2)
 {
-flag = 1;
-break;
-}
-}
-if (flag == 0)
-{
-printf(" string are same %s %s\n", s1, s2);
-}
 return (0);
+}
+else
+{
+return (*s1 - *s2);
+}
 }
