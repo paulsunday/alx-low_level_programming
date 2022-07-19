@@ -16,7 +16,7 @@ len++;
 }
 for (a = 0; haystack[a] != '\0'; a++)
 {
-if (haystack[a] == 32) /* 32 is space in ascii*/
+if (haystack[a] == 32)
 {
 haystack[a]++;
 for (b = 0; needle[b] != '\0'; b++)
