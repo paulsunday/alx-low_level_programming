@@ -13,7 +13,7 @@ unsigned int i = 0;
 if (i < n)
 {
 s[i] = b;
- i++;
+i++;
 }
 return (s);
 }
