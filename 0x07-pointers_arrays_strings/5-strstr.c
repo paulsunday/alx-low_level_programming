@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
 * _strstr-Finds the first occurance of substring
 * @haystack: String
@@ -7,22 +8,22 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-int a, b, len = 0;
-for (a = 0; haystack[a] != '\0'; a++)
+int i = 0, j = 0;
+while (haystack[i])
 {
-len++;
-}
-for (a = 0; haystack[a] != '\0'; a++)
+while (needle[j])
 {
-if (haystack[a] == 32)
+if (haystack[i + j] != needle[j])
 {
-haystack[a]++;
-for (b = 0; needle[b] != '\0'; b++)
+break;
+}
+j++;
+}
+if (needle[j] == '\0')
 {
-if (haystack[a] == needle[b])
-return (needle);
+return (haystack + i);
 }
+i++;
 }
-}
-return ('\0');
+return (NULL);
 }
