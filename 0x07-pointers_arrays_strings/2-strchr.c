@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr- return a pointer to char or NULL
  * @s: string
  * @c: char in string
- * Return: A pointer
+ * Return: A pointer or NULL
  */
 char *_strchr(char *s, char c)
 {
