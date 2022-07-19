@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr- return a pointer to char or NULL
  * @s: string
@@ -17,5 +16,5 @@ return (s);
 }
 if (c == '\0')
 return (s);
-return (NULL);
+ return ('\0');
 }
