@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 /**
 * _strstr-Finds the first occurance of substring
@@ -26,5 +27,5 @@ return (needle);
 }
 }
 }
-return ('\0');
+return (NULL);
 }
