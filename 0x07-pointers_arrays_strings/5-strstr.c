@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include "main.h"
 /**
 * _strstr-Finds the first occurance of substring
@@ -8,9 +7,7 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-int a;
-int len = 0;
-int b;
+int a, b, len = 0;
 for (a = 0; haystack[a] != '\0'; a++)
 {
 len++;
@@ -27,5 +24,5 @@ return (needle);
 }
 }
 }
-return (NULL);
+return ('\0');
 }
