@@ -6,11 +6,12 @@
 */
 int is_palindrome(char *s)
 {
-int i = 0;
-if (*s != 0)
+char *p;
+is_palindrome(s + 1);
+p = &(*s);
+if (*p == *s)
 {
-i++;
-return (i + is_palindrome(s + 1));
+return (1);
 }
-return (i);
+return (0);
 }
