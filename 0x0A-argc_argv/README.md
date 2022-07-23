@@ -3,3 +3,4 @@ Task 0: Write a program that prints its name, followed by a new line.
 
 * You should not remove the path before the name of the program
 Task 1:Write a program that prints the number of arguments passed into it./ Your program should print a number, followed by a new line
+Task 2: Write a program that prints all arguments it receives./ All arguments should be printed, including the first one/ on;y print one argument per line, ending with a new line
