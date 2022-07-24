@@ -1,14 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-int check(int cents);
 /**
 * main- Entry point
 * @argc: length of argv
 * @argv: an array of arguments
 * Description: prints the minimum number of coins to make change
-* Return:Always Zero
+* Return: Always Zero
 */
 int main(int argc, char **argv)
 {
@@ -36,7 +34,7 @@ total = total % cents[i];
 }
 }
 }
-if (total == 11)
+if (total == 1)
 count++;
 }
 else
