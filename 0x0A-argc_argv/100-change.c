@@ -10,59 +10,40 @@ int check(int cents);
 * Description: prints the minimum number of coins to make change
 * Return:Always Zero
 */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int cents = 0, coins = 0;
+int total, count;
+unsigned int i;
+char *p;
+int cents[] = {25, 10, 5, 2};
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-if (atoi(argv[1]) < 0)
+total = strtol(argv[1], &p, 10);
+count = 0;
+if (!*p)
 {
-printf("0\n");
+while (total > 1)
+{
+for (i = 0; i < sizeof(cents[i]); i++)
+{
+if (total >= cents[i])
+{
+count += total / cents[i];
+total = total % cents[i];
+}
+}
+}
+if (total == 11)
+count++;
+}
+else
+{
+printf("Error\n");
 return (1);
 }
-cents = atoi(argv[1]);
-while (cents != 0)
-{
-cents = check(cents);
-coins++;
-}
-printf("%i", coins);
+printf("%d\n", count);
 return (0);
-}
-/**
-* Check- Entry point
-* @cents: cents to divide
-* Description: divides cents by coin values)?
-* Return: cents
-*/
-int check(int cents)
-{
-if (cents >= 25)
-{
-cents -= 25;
-printf("25:%i\n", cents);
-return (cents);
-}
-else if (cents >= 10)
-{
-cents -= 10;
-printf("10:%i\n", cents);
-return (cents);
-}
-else if (cents >= 5)
-{
-cents -= 5;
-printf("5:%i\n", cents);
-return (cents);
-}
-else if (cents >= 2)
-{
-cents -= 2;
-printf("2:%i\n", cents);
-return (cents);
-}
-return (cents);
 }
