@@ -18,14 +18,14 @@ len1 = len2 = 0;
 if (s1 != NULL)
 {
 i = 0;
-while (s1[i + 1] != '\0')
-len1 + 1;
+while (s1[i++] != '\0')
+len1++;
 }
 if (s2 != NULL)
 {
 i = 0;
-while (s2[i + 1] != '\0')
-len2 + 1;
+while (s2[i++] != '\0')
+len2++;
 }
 len = len1 + len2;
 result = (char *)malloc(sizeof(char) * (len + 1));
