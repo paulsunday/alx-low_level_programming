@@ -8,8 +8,7 @@
 int *array_range(int min, int max)
 {
 int *str;
-int i;
-int count;
+int i, count;
 if (min > max)
 {
 return (NULL);
