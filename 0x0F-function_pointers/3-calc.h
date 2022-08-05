@@ -1,13 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _HEADER_
+#define _HEADER_
 /**
-* struct op - typedef for returning function pointer
-* @func: the function
+* struct op - Struct op
+*
+* @op: The operator
+* @f: The function associated
 */
 typedef struct op
 {
 char *op;
-int (*func)(int a, int b);
+int (*f)(int a, int b);
 } op_t;
 int op_add(int a, int b);
 int op_sub(int a, int b);
