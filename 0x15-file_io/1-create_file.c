@@ -1,24 +1,43 @@
-#include "main.h"
-/**
- * create_file- creates an array of chars, nad initilizes
- * @text_content: is a NULL terminated string to write to the file
- * @filename: is the name of the file to create
- * Return: 1 on success, -1 on failure
+/*
+ * File: 0-read_textfile.c
+ * Auth: Dr Marcus.
  */
-int create_file(const char *filename, char *text_content)
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * read_textfile - Reads a text file and prints it to POSIX stdout.
+ * @filename: A pointer to the name of the file.
+ * @letters: The number of letters the
+ *           function should read and print.
+ *
+ * Return: If the function fails or filename is NULL - 0.
+ *         O/w - the actual number of bytes the function can read and print.
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int o, w, len = 0;
+	ssize_t o, r, w;
+	char *buffer;
+
 	if (filename == NULL)
-		return (-1);
-	if (text_content != NULL)
+		return (0);
+
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+		return (0);
+
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
-		for (len = 0; text_content[len];)
-			len++;
+		free(buffer);
+		return (0);
 	}
-	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content, len);
-	if (o == -1 || w == -1)
-		return (-1);
-	close(0);
-	return (1);
+
+	free(buffer);
+	close(o);
+
+	return (w);
 }
