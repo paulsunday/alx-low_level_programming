@@ -1,4 +1,4 @@
-#ifdef _HASH_TABLES_H
+#ifndef _HASH_TABLES_H_
 #define _HASH_TABLES_H_
 
 #include <stdlib.h>
@@ -7,10 +7,11 @@
 
 /**
  * struct hash_node_s - Node of a hash table
+ *
  * @key: The key, string
  * The key is unique in the HashTable
  * @value: The value corresponding to a key
- * @next: A pointer to the next node of the list
+ * @next: A pointer to the next node of the List
  */
 typedef struct hash_node_s
 {
@@ -24,8 +25,8 @@ typedef struct hash_node_s
  *
  * @size: The size of the array
  * @array: An array of size @size
- * Each cell of the array is a pointer to the first node of a linked list,
- * because we want our HashTable to use a chaining collision handling
+ * Each cell of this array is a pointer to the first node of a linked list,
+ * because we want our HashTable to use a Chaining collision handling
  */
 typedef struct hash_table_s
 {
@@ -86,4 +87,3 @@ void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
 
 #endif /* _HASH_TABLES_H_ */
-
